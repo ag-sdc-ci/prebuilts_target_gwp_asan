@@ -1,0 +1,6 @@
+shadow prebuilt repo: gwp_asan (target)
+  upstream: external/gwp_asan
+  api-level: 34 (branch 34-20261016)
+  blobs: org.blisslabs.ag.ext.gwp_asan.apex
+  dev-src: extracted extractive payload (libgwp_asan.a, libgwp_asan.so, libgwp_asan_crash_handler.a, libgwp_asan_crash_handler.so, headers) + root Android.bp
+  date: 2026-10-16
