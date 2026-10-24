@@ -50,7 +50,14 @@ cc_prebuilt_library_static {
         "gwp_asan_headers",
     ],
     export_include_dirs: ["include"],
-    srcs: ["lib/libgwp_asan.a"],
+    multilib: {
+        lib32: {
+            srcs: ["lib/libgwp_asan.a"],
+        },
+        lib64: {
+            srcs: ["lib64/libgwp_asan.a"],
+        },
+    },
     apex_available: [
         "//apex_available:platform",
         "com.android.runtime",
@@ -74,7 +81,14 @@ cc_prebuilt_library_static {
         "gwp_asan_headers",
     ],
     export_include_dirs: ["include"],
-    srcs: ["lib/libgwp_asan_crash_handler.a"],
+    multilib: {
+        lib32: {
+            srcs: ["lib/libgwp_asan_crash_handler.a"],
+        },
+        lib64: {
+            srcs: ["lib64/libgwp_asan_crash_handler.a"],
+        },
+    },
     apex_available: [
         "//apex_available:platform",
         "com.android.runtime",
